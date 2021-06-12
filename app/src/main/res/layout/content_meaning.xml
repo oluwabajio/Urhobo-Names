@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="urhobo.names.meanings.nigeria.urhobonamesmeaningsnaija.MeaningActivity"
+    tools:showIn="@layout/activity_meaning">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+
+
+        tools:context="urhobo.names.meanings.nigeria.igbonamesmeaningsnaija">
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/word"-->
+
+            <!--android:text="Hello"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:textSize="16sp"-->
+
+            <!--android:textStyle="bold"-->
+
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<View-->
+
+            <!--android:id="@+id/seperator"-->
+
+            <!--android:layout_width="match_parent"-->
+
+            <!--android:layout_height="1dp"-->
+
+            <!--android:layout_alignLeft="@+id/word"-->
+
+            <!--android:layout_below="@+id/word"-->
+
+            <!--android:layout_marginBottom="10dp"-->
+
+            <!--android:layout_marginRight="10dp"-->
+
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:background="#000000" />-->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Meaning"
+            android:id="@+id/dictionary"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_alignParentStart="true" />
+
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:text="Text To Speech"
+            android:id="@+id/button"
+            android:layout_below="@+id/dictionary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            fancy:fb_textSize = "40px"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7c2705"
+            fancy:fb_focusColor="#501b06"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="TEXT TO SPEECH"
+            fancy:fb_textColor="#FFFFFF" />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:layout_below="@+id/dictionary"
+            android:layout_marginTop="200dp"
+            ads:adUnitId="ca-app-pub-2439901986027384/8146558574"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
